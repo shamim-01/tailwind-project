@@ -51,8 +51,6 @@ Basic email validation using JavaScript.
 
 ## 🚀 Getting Started
 
-### Clone the repository:
-git clone https://github.com/your-username/smart-coders.git
 
 ### Run the project:
 Open index.html in your browser.
