@@ -7,153 +7,365 @@
   <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-[#2B2D33]">
-  <nav class="bg-[#2B2D33] shadow-xl sticky top-0 z-50">
-    <div class="container mx-auto">
+<body class="bg-slate-900">
 
-      <div class="sm:flex justify-between items-center py-4 ">
+  <!-- Navbar -->
+  <nav class="bg-slate-800 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-700 font-semibold ">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-between items-center py-4">
 
-        <div class="text-center mb-4 sm:mb-0">
-          <a href="#" class="text-white text-xl sm:text-3xl font-bold px-3"><span class="text-[#eb281a]">S</span>mart
-            Cod<span class="text-[#e8270d]">ers</span>
-          </a>
-        </div>
-        <ul class="sm:flex text-xl text-white text-center border-t sm:border-none">
-          <li class="mt-4 sm:mt-0"><a href="#" class="p-3 text-[#F67316]">Home</a></li>
-          <li><a href="#" class="p-3 hover:text-[#F67316]">Products</a></li>
-          <li><a href="#" class="p-3 hover:text-[#F67316]">Blogs</a></li>
-          <li><a href="#" class="p-3 hover:text-[#F67316]">Portfolio</a></li>
-          <li><a href="#" class="p-3 hover:text-[#F67316]">Contact</a></li>
+        <!-- Logo -->
+        <a href="#home" class="text-white text-2xl sm:text-3xl font-extrabold tracking-wide">
+          <span class="text-[#F97316]">S</span>mart
+          <span class="text-[#F97316]">Coders</span>
+        </a>
+
+        <!-- Menu -->
+        <ul class="hidden sm:flex items-center space-x-6 text-lg text-white">
+
+          <li>
+            <a href="#home" class="relative group text-[#F97316]">
+              Home
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#services" class="relative group hover:text-[#F97316] transition">
+              Services
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#clients" class="relative group hover:text-[#F97316] transition">
+              Clients
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#pricing" class="relative group hover:text-[#F97316] transition">
+              Pricing
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="relative group hover:text-[#F97316] transition">
+              Contact
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <!-- CTA Button -->
+          <li>
+            <a href="#contact"
+              class="ml-4 px-5 py-2 rounded-full bg-[#F97316] text-white font-semibold hover:bg-[#ea580c] transition shadow-md">
+              Get Started
+            </a>
+          </li>
+
         </ul>
 
       </div>
-
     </div>
   </nav>
-
-  <header class="ml-5 mr-5">
+  <!-- Hero Section -->
+  <header id="home" class="ml-5 mr-5">
     <div
-      class="container border border-indigo-600 border-t-0  sm:flex text-white justify-around items-center text-center h-[85vh] px-5">
+      class="container mx-auto border border-indigo-600 border-t-0 sm:flex text-white justify-around items-center text-center min-h-[85vh] px-5 py-12">
       <div>
         <h1 class="text-3xl sm:text-5xl font-bold leading-tight">
           Smart Coders : <br> Welcome to Our Website
         </h1>
-
-        <p class="text-lg opacity-90">
+        <p class="text-lg opacity-90 mt-4">
           Learn programming in a smart and modern way 🚀
         </p>
-        <button
-          class="bg-indigo-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-600 transition duration-300 mt-8">
-          Join: Programming Sikhbo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke-width="1.5" stroke="currentColor" class=" w-4 inline-block ml-2 text-red-600 animate-ping">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
-
-        </button>
+        <a href="#contact">
+          <button
+            class="bg-indigo-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-600 transition duration-300 mt-8 inline-flex items-center gap-2 cursor-pointer">
+            Join: Programming Sikhbo
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4 text-red-600 animate-ping">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </a>
       </div>
-      <div class="mb-8 sm:mb-0">
-        <img class="animate-pulse " src="./images/hero-img.png" alt="Hero Image" class="w-full max-w-lg mx-auto">
+      <div class="mb-8 sm:mb-0 mt-8 sm:mt-0">
+        <img class="animate-pulse w-full max-w-lg mx-auto" src="./images/hero-img.png" alt="Hero Image">
       </div>
     </div>
   </header>
 
   <main class="container mx-auto px-5">
-    <section class="my-20">
+
+    <!-- Services Section -->
+    <section id="services" class="my-20">
       <h2 class="text-white text-3xl text-center mb-12">Our Services</h2>
-      <div class="grid  lg:grid-cols-3 md:grid-cols-2 gap-8 ">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
         <div
-          class="bg-gray-800 p-8 rounded-2xl text-center border-4 border-[#2B2D33] hover:border-indigo-800 transition duration-300 cursor-pointer">
-          <img class="w-1/2 mx-auto" src="./images/frontEnd.png" alt="Front-End Development">
-          <h4 class="text-white text-xl font-bold mb-2  underline underline-offset-6">Front-End Development</h4>
+          class="bg-slate-900 p-8 rounded-2xl text-center border border-indigo-700 hover:border-indigo-500 transition duration-300 cursor-pointer hover:-translate-y-1">
+          <img class="w-1/2 mx-auto mb-4" src="./images/frontEnd.png" alt="Front-End Development">
+          <h4 class="text-white text-xl font-bold mb-2 underline underline-offset-6">Front-End Development</h4>
           <p class="text-gray-300">Build responsive and interactive user interfaces with the latest web technologies.
           </p>
         </div>
         <div
-          class="bg-gray-800 p-8 rounded-2xl text-center border-4 border-[#2B2D33] hover:border-indigo-800 transition duration-300 cursor-pointer">
-          <img class="w-1/2 mx-auto" src="./images/frontEnd.png" alt="Front-End Development">
-          <h4 class="text-white text-xl font-bold mb-2  underline underline-offset-6">Back-End Development</h4>
-          <p class="text-gray-300">Build responsive and interactive user interfaces with the latest web technologies.
-          </p>
+          class="bg-slate-900 p-8 rounded-2xl text-center border border-indigo-700 hover:border-indigo-500 transition duration-300 cursor-pointer hover:-translate-y-1">
+          <img class="w-1/2 mx-auto mb-4" src="./images/frontEnd.png" alt="Back-End Development">
+          <h4 class="text-white text-xl font-bold mb-2 underline underline-offset-6">Back-End Development</h4>
+          <p class="text-gray-300">Build powerful server-side applications and robust database architectures.</p>
         </div>
         <div
-          class="bg-gray-800 p-8 rounded-2xl text-center border-4 border-[#2B2D33] hover:border-indigo-800 transition duration-300 cursor-pointer">
-          <img class="w-1/2 mx-auto" src="./images/frontEnd.png" alt="Front-End Development">
-          <h4 class="text-white text-xl font-bold mb-2  underline underline-offset-6">Front-End Development</h4>
-          <p class="text-gray-300">Build responsive and interactive user interfaces with the latest web technologies.
-          </p>
+          class="bg-slate-900 p-8 rounded-2xl text-center border border-indigo-700 hover:border-indigo-500 transition duration-300 cursor-pointer hover:-translate-y-1">
+          <img class="w-1/2 mx-auto mb-4" src="./images/frontEnd.png" alt="Full-Stack Development">
+          <h4 class="text-white text-xl font-bold mb-2 underline underline-offset-6">Full-Stack Development</h4>
+          <p class="text-gray-300">Complete end-to-end web solutions with modern frameworks and tools.</p>
         </div>
         <div
-          class="bg-gray-800 p-8 rounded-2xl text-center border-4 border-[#2B2D33] hover:border-indigo-800 transition duration-300 cursor-pointer">
-          <img class="w-1/2 mx-auto" src="./images/frontEnd.png" alt="Front-End Development">
-          <h4 class="text-white text-xl font-bold mb-2  underline underline-offset-6">Front-End Development</h4>
-          <p class="text-gray-300">Build responsive and interactive user interfaces with the latest web technologies.
-          </p>
+          class="bg-slate-900 p-8 rounded-2xl text-center border border-indigo-700 hover:border-indigo-500 transition duration-300 cursor-pointer hover:-translate-y-1">
+          <img class="w-1/2 mx-auto mb-4" src="./images/frontEnd.png" alt="UI/UX Design">
+          <h4 class="text-white text-xl font-bold mb-2 underline underline-offset-6">UI/UX Design</h4>
+          <p class="text-gray-300">Create beautiful, user-friendly designs that enhance user experience.</p>
         </div>
         <div
-          class="bg-gray-800 p-8 rounded-2xl text-center border-4 border-[#2B2D33] hover:border-indigo-800 transition duration-300 cursor-pointer">
-          <img class="w-1/2 mx-auto" src="./images/frontEnd.png" alt="Front-End Development">
-          <h4 class="text-white text-xl font-bold mb-2  underline underline-offset-6">Front-End Development</h4>
-          <p class="text-gray-300">Build responsive and interactive user interfaces with the latest web technologies.
-          </p>
+          class="bg-slate-900 p-8 rounded-2xl text-center border border-indigo-700 hover:border-indigo-500 transition duration-300 cursor-pointer hover:-translate-y-1">
+          <img class="w-1/2 mx-auto mb-4" src="./images/frontEnd.png" alt="Mobile Development">
+          <h4 class="text-white text-xl font-bold mb-2 underline underline-offset-6">Mobile Development</h4>
+          <p class="text-gray-300">Build cross-platform mobile apps for iOS and Android devices.</p>
         </div>
         <div
-          class="bg-gray-800 p-8 rounded-2xl text-center border-4 border-[#2B2D33] hover:border-indigo-800 transition duration-300 cursor-pointer">
-          <img class="w-1/2 mx-auto" src="./images/frontEnd.png" alt="Front-End Development">
-          <h4 class="text-white text-xl font-bold mb-2  underline underline-offset-6">Front-End Development</h4>
-          <p class="text-gray-300">Build responsive and interactive user interfaces with the latest web technologies.
-          </p>
+          class="bg-slate-900 p-8 rounded-2xl text-center border border-indigo-700 hover:border-indigo-500 transition duration-300 cursor-pointer hover:-translate-y-1">
+          <img class="w-1/2 mx-auto mb-4" src="./images/frontEnd.png" alt="Cloud Services">
+          <h4 class="text-white text-xl font-bold mb-2 underline underline-offset-6">Cloud Services</h4>
+          <p class="text-gray-300">Deploy and scale applications with AWS, Azure, and cloud solutions.</p>
         </div>
       </div>
     </section>
 
-    <section class="bg-slate-800 mb-24 py-20 md:py-24 rounded-2xl grid place-content-center text-center">
-      <div class="md:flex justify-center items-center text-white gap-5 sm:gap-8 md:gap-12 md:gap-x-48">
-        <div class="text-lg sm:text-xl md:text-4xl">
-          <p class="text-yellow-300 mb-10 animate-bounce">My Clients</p>
-          <h2> My take care of <br> more <span class="underline decoration-amber-400 underline-offset-8 ">than
-              100k</span> clients</h2>
+    <!-- Clients Section -->
+    <section id="clients"
+      class="bg-slate-900 mb-24 py-20 md:py-24 rounded-2xl text-center border border-indigo-700 hover:border-indigo-500 transition duration-300 cursor-pointer">
+      <div class="md:flex justify-center items-center text-white gap-5 sm:gap-8 md:gap-12 md:gap-x-48 px-6">
+        <div class="text-lg sm:text-xl md:text-4xl mb-10 md:mb-0">
+          <p class="text-orange-400 mb-10 animate-bounce">My Clients</p>
+          <h2>My take care of <br> more <span class="underline decoration-red-500 underline-offset-8">than 100k</span>
+            clients</h2>
         </div>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 md:gap-12 ">
-          <div>
-            <img class="" src="./images/client-01.png" alt="Clients Image">
-            <h3 class="text-center ">One Plus</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-5 sm:gap-8 md:gap-12">
+          <div><img src="./images/client-01.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">One Plus</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-02.png" alt="Clients Image">
-            <h3 class="text-center ">Tencent</h3>
+          <div><img src="./images/client-02.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Tencent</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-03.png" alt="Clients Image">
-            <h3 class="text-center ">Apple</h3>
+          <div><img src="./images/client-03.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Apple</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-04.png" alt="Clients Image">
-            <h3 class="text-center ">Microsoft</h3>
+          <div><img src="./images/client-04.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Microsoft</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-05.png" alt="Clients Image">
-            <h3 class="text-center ">Lenevo</h3>
+          <div><img src="./images/client-05.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Lenovo</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-06.png" alt="Clients Image">
-            <h3 class="text-center ">Huawei</h3>
+          <div><img src="./images/client-06.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Huawei</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-07.png" alt="Clients Image">
-            <h3 class="text-center ">Nexus</h3>
+          <div><img src="./images/client-07.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Nexus</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-08.png" alt="Clients Image">
-            <h3 class="text-center ">Tesla</h3>
+          <div><img src="./images/client-08.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Tesla</h3>
           </div>
-          <div>
-            <img class="" src="./images/client-09.png" alt="Clients Image">
-            <h3 class="text-center ">Brave</h3>
+          <div><img src="./images/client-09.png" alt="Clients Image" class="mx-auto">
+            <h3 class="text-center mt-2">Brave</h3>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing"
+      class="bg-slate-900 my-16 sm:my-20 py-12 sm:py-24 border border-indigo-700 hover:border-indigo-500 rounded-2xl cursor-pointer transition duration-300">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 justify-center items-center text-white px-6">
+        <div class="border border-white rounded-2xl p-8 hover:scale-105 transition duration-300">
+          <h5 class="text-xl font-semibold">Basic Plan</h5>
+          <h2 class="text-3xl mt-2">$<span class="text-4xl md:text-5xl font-bold">19.00</span><span
+              class="text-sm">/month</span></h2>
+          <hr class="my-6">
+          <ul class="space-y-2 text-left list-disc list-inside">
+            <li>5000 User Activities</li>
+            <li>Unlimited Access</li>
+            <li>No Hidden Charge</li>
+            <li>03 Time Updates</li>
+            <li>Figma Source File</li>
+            <li>Many More Facilities</li>
+          </ul>
+          <button onclick="alert('Basic Plan selected! Thank you for choosing us.')"
+            class="bg-green-700 mt-8 hover:bg-green-500 transition px-6 py-2 rounded-lg w-full font-semibold cursor-pointer">Purchase</button>
+        </div>
+        <div class="border-2 border-indigo-500 rounded-2xl p-8 hover:scale-105 transition duration-300 relative">
+          <div
+            class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-indigo-600 text-white px-4 py-1 rounded-full text-sm">
+            Popular</div>
+          <h5 class="text-xl font-semibold mt-4">Pro Plan</h5>
+          <h2 class="text-3xl mt-2">$<span class="text-4xl md:text-5xl font-bold">49.00</span><span
+              class="text-sm">/month</span></h2>
+          <hr class="my-6">
+          <ul class="space-y-2 text-left list-disc list-inside">
+            <li>Unlimited User Activities</li>
+            <li>Priority Access</li>
+            <li>No Hidden Charge</li>
+            <li>Weekly Updates</li>
+            <li>Figma + Source Code</li>
+            <li>24/7 Support</li>
+          </ul>
+          <button onclick="alert('Pro Plan selected! Upgrade to Pro and get premium features.')"
+            class="bg-indigo-600 mt-8 hover:bg-indigo-500 transition px-6 py-2 rounded-lg w-full font-semibold cursor-pointer">Purchase</button>
+        </div>
+        <div class="border border-white rounded-2xl p-8 hover:scale-105 transition duration-300">
+          <h5 class="text-xl font-semibold">Enterprise</h5>
+          <h2 class="text-3xl mt-2">$<span class="text-4xl md:text-5xl font-bold">99.00</span><span
+              class="text-sm">/month</span></h2>
+          <hr class="my-6">
+          <ul class="space-y-2 text-left list-disc list-inside">
+            <li>Custom Solutions</li>
+            <li>Dedicated Team</li>
+            <li>No Hidden Charge</li>
+            <li>Daily Updates</li>
+            <li>Full Source Code</li>
+            <li>Priority Support</li>
+          </ul>
+          <button onclick="alert('Enterprise Plan selected! Our team will contact you within 24 hours.')"
+            class="bg-green-700 mt-8 hover:bg-green-500 transition px-6 py-2 rounded-lg w-full font-semibold cursor-pointer">Purchase
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="max-w-7xl mx-auto px-5 md:px-8 pb-20 ">
+      <div class="bg-gradient-to-r from-[#1E2068] to-[#16181F] rounded-3xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h3 class="text-white text-2xl md:text-3xl font-bold">Start your <span class="text-[#F97316]">coding
+                journey</span> today</h3>
+            <p class="text-gray-400 mt-3">Got questions? We're here to help you become a smart coder.</p>
+            <div class="mt-6 space-y-2 text-gray-300 text-sm"><i class="fas fa-envelope text-[#F97316] w-6"></i>
+              hello@smartcoders.com<br><i class="fas fa-map-marker-alt text-[#F97316] w-6"></i> Dhaka, Bangladesh</div>
+          </div>
+          <form class="space-y-4">
+            <input type="text" placeholder="Your name"
+              class="w-full p-3 rounded-xl bg-[#2A2D38] border-0 text-white placeholder-gray-500 focus:ring-2 focus:ring-[#F97316] outline-none">
+            <input type="email" placeholder="Email address"
+              class="w-full p-3 rounded-xl bg-[#2A2D38] border-0 text-white placeholder-gray-500 focus:ring-2 focus:ring-[#F97316] outline-none">
+            <textarea rows="2" placeholder="Tell us about your idea..."
+              class="w-full p-3 rounded-xl bg-[#2A2D38] border-0 text-white focus:ring-2 focus:ring-[#F97316] outline-none"></textarea>
+            <button
+              class="bg-[#F97316] hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition w-full md:w-auto">Send
+              message →</button>
+          </form>
+        </div>
+        <div class="border-t border-red-700 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gray-400 text-sm"><i class="far fa-bell mr-1 text-[#F97316]"></i> Subscribe to weekly tech
+            insights</p>
+          <div class="flex gap-2 w-full md:w-auto">
+            <input type="email" placeholder="Your best email"
+              class="flex-1 p-2 rounded-full bg-[#2A2D38] text-sm text-white px-4 outline-none border border-gray-600 hover:border-amber-700">
+            <button
+              class="bg-orange-700 hover:bg-[#F97316] text-white px-5 py-2 rounded-full text-sm transition">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#111F1F] text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="flex flex-col sm:flex-row items-center justify-between mb-14 gap-6">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+            SC
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold text-white"> Smart <span class="text-orange-400">Coders</span> </h1>
+            <p class="text-sm text-gray-400">Build. Learn. Grow.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-5">My Account</h2>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-orange-500 transition">Creator Dashboard</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">Wallet</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">Create Item</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">My Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-5">Web Links</h2>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-orange-500 transition">Collections</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">Item Details</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">Rankings</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">User Profile</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-5">Community</h2>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-orange-500 transition">Blog Category</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">Blog Author</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">Blog</a></li>
+            <li><a href="#" class="hover:text-orange-500 transition">Blog Details</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold text-white mb-5">Contact</h2>
+          <ul class="space-y-3 text-sm leading-6">
+            <li>📍 Dhaka, Bangladesh</li>
+            <li>👤 BD Author</li>
+            <li>📧 author@gmail.com</li>
+            <li>📞 01777777777</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-red-600 my-12"></div>
+      <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+        <p>© 2026 Smart Coders. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-orange-500 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-orange-500 transition">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Newsletter Subscription JavaScript -->
+  <script>
+    function subscribeNewsletter() {
+      var email = document.getElementById('newsletterEmail').value;
+      if (email === "") {
+        alert("Please enter your email address to subscribe.");
+      } else if (!email.includes("@") || !email.includes(".")) {
+        alert("Please enter a valid email address.");
+      } else {
+        alert("Thank you for subscribing! You'll receive our latest updates.");
+        document.getElementById('newsletterEmail').value = "";
+      }
+    }
+  </script>
 
 </body>
 
