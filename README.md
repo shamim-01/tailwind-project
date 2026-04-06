@@ -26,30 +26,10 @@ This project is a fully responsive landing page designed for a programming learn
 - JavaScript (Basic)  
 
 ---
-## ive Demo
-- tailwind-projectt.netlify.app
-## 📁 Project Structure
+## 🌐 Live Demo
 
-Smart-Coders/
-│
-├── index.html
-├── dist/
-│ └── output.css
-├── images/
-│ ├── hero-img.png
-│ ├── frontEnd.png
-│ ├── client-01.png
-│ ├── client-02.png
-│ ├── client-03.png
-│ ├── client-04.png
-│ ├── client-05.png
-│ ├── client-06.png
-│ ├── client-07.png
-│ ├── client-08.png
-│ └── client-09.png
-│
-└── README.md
----
+👉 https://tailwind-projectt.netlify.app
+
 
 ## ✨ Key Features
 
